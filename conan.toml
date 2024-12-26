@@ -4,15 +4,17 @@ type = "package-manager"
 [resolve]
 git-url = "https://github.com/conan-io/conan"
 
-[platform.macos]
-download-file = "conan-{version}-macos-{arch}.tgz"
 [platform.linux]
 download-file = "conan-{version}-linux-{arch}.tgz"
+exe-path = "conan"
+
+[platform.macos]
+download-file = "conan-{version}-macos-{arch}.tgz"
+exe-path = "conan"
+
 [platform.windows]
 download-file = "conan-{version}-windows-{arch}.zip"
 exe-path = "conan.exe"
 
 [install]
 download-url = "https://github.com/conan-io/conan/releases/download/v{version}/{download_file}"
-[install.primary]
-exe-path = "conan"
