@@ -23,4 +23,4 @@ download-url = "https://github.com/conan-io/conan/releases/download/v{version}/{
 aarch64 = "arm64"
 
 [install.exes]
-conan = { exe-path = "conan", primary = true }
+conan = { exe-path = "bin/conan", primary = true }
