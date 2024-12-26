@@ -18,3 +18,7 @@ exe-path = "conan.exe"
 
 [install]
 download-url = "https://github.com/conan-io/conan/releases/download/v{version}/{download_file}"
+[install.exes]
+[install.exes.conan]
+exe-path = "conan"
+primary = true
