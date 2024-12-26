@@ -1,0 +1,23 @@
+name = "Conan"
+type = "package-manager"
+
+[resolve]
+git-url = "https://github.com/conan-io/conan"
+
+[platform]
+archive-prefix = "conan-{version}-{os}-{arch}"
+exe-path = "conan"
+download-file = "conan-{version}-{os}-{arch}.tgz"
+
+[platform.windows]
+archive-prefix = "conan-{version}-{os}-{arch}"
+exe-path = "conan.exe"
+download-file = "conan-{version}-{os}-{arch}.zip"
+
+[install]
+download-url = "https://github.com/conan-io/conan/releases/download/v{version}/{download_file}"
+
+[install.exes]
+[install.exes.conan]
+exe-path = "conan"
+primary = true
