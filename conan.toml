@@ -20,7 +20,7 @@ archive-prefix = ""
 exe-path = "conan.exe"
 
 [install]
-download-url = "https://github.com/conan-io/conan/releases/download/v{version}/{download_file}"
+download-url = "https://github.com/conan-io/conan/releases/download/{version}/{download_file}"
 
 [install.arch]
 aarch64 = "arm64"
