@@ -5,6 +5,8 @@ type = "package-manager"
 git-url = "https://github.com/conan-io/conan"
 
 [platform]
+[platform.linux]
+[platform.macos]
 exe-path = "conan"
 download-file = "conan-{version}-{os}-{arch}.tgz"
 
