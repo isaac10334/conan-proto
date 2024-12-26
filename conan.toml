@@ -6,17 +6,14 @@ git-url = "https://github.com/conan-io/conan"
 
 [platform.linux]
 download-file = "conan-{version}-linux-{arch}.tgz"
-exe-path = "conan"
 archive-prefix = ""
 
 [platform.macos]
 download-file = "conan-{version}-macos-{arch}.tgz"
-exe-path = "conan"
 archive-prefix = ""
 
 [platform.windows]
 download-file = "conan-{version}-windows-{arch}.zip"
-exe-path = "conan.exe"
 archive-prefix = ""
 
 [install]
@@ -25,6 +22,5 @@ download-url = "https://github.com/conan-io/conan/releases/download/v{version}/{
 [install.arch]
 aarch64 = "arm64"
 
-[install.exes.conan]
-exe-path = "conan"
-primary = true
+[install.exes]
+conan = { exe-path = "conan", primary = true }
